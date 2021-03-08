@@ -78,7 +78,7 @@ if __name__ == '__main__':
                 '109359892424006',  # Pepeekeo, Hawaii
                 '213061859',  # Rainbow Falls
                 '753431934796611',  # Hilo Volcanoes National Park and Rainbow Falls Excursion
-                '1683284565326878',  # Boiling Pots, Wailuku River
+                '1683284565326878'  # Boiling Pots, Wailuku River
             ], amount=3, skip_top_posts=True, randomize=True)
             # session.like_by_tags(['waipiovalley', 'maunakea', 'bigislandhawaii'], amount=5, interact=False)
             # session.set_do_like(enabled=True, percentage=60)
