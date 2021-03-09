@@ -35,8 +35,9 @@ if __name__ == '__main__':
                                          peak_server_calls_hourly=100,
                                          peak_server_calls_daily=3000)
             session.set_skip_users(skip_private=True)
+            session.set_user_interact(amount=10, randomize=True, percentage=10, media='Photo')
             session.follow_user_followers(['mahinakealo.skin'],
-                                          amount=1500, interact=False, randomize=False, sleep_delay=300)
+                                          amount=1500, interact=False, randomize=False, sleep_delay=500)
             session.set_action_delays(enabled=True, follow=600, randomize=True,
                                       random_range_from=50, random_range_to=150)
             print_hi('All done. Sleep for 10 days ...')
