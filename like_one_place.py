@@ -24,7 +24,7 @@ if __name__ == '__main__':
             session.set_quota_supervisor(enabled=True,
                                          sleep_after=["likes", "comments_d", "follows", "unfollows", "server_calls_h"],
                                          sleepyhead=True, stochastic_flow=True, notify_me=True,
-                                         peak_likes_hourly=30,
+                                         peak_likes_hourly=44,
                                          peak_likes_daily=480,
                                          peak_comments_hourly=21,
                                          peak_comments_daily=182,
@@ -32,13 +32,13 @@ if __name__ == '__main__':
                                          peak_follows_daily=500,
                                          peak_unfollows_hourly=35,
                                          peak_unfollows_daily=402,
-                                         peak_server_calls_hourly=150,
-                                         peak_server_calls_daily=3000)
+                                         peak_server_calls_hourly=None,
+                                         peak_server_calls_daily=None)
 
             session.set_action_delays(enabled=True, like=10, randomize=True,
                                       random_range_from=50, random_range_to=300)
             session.like_by_locations([
-                '109430532409629'  # Hilo, HI
+                '113411608671854'  # Hilo, HI
             ], amount=200, skip_top_posts=True, randomize=True)
 
             print_hi('All done. Sleep for 1 hour ...')
