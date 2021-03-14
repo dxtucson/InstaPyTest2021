@@ -36,10 +36,10 @@ if __name__ == '__main__':
                                          peak_server_calls_daily=None)
 
             session.set_action_delays(enabled=True, like=10, randomize=True,
-                                      random_range_from=50, random_range_to=300)
+                                      random_range_from=100, random_range_to=600)
             session.like_by_locations([
-                '113411608671854'  # Hilo, HI
-            ], amount=200, skip_top_posts=True, randomize=True)
+                '109430532409629'  # Hilo, HI
+            ], amount=300, skip_top_posts=True, randomize=True)
 
             print_hi('All done. Sleep for 1 hour ...')
         time.sleep(3600)
